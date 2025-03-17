@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh's Love</title>
+    <style>
+        /* Reset body and html for full page and centered content */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Video background */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Send video behind content */
+        }
+
+        /* Centered Text */
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 1.3rem;
+            max-width: 90%;
+            z-index: 1; /* Keep text in front of video */
+        }
+
+        .center-text p {
+            margin: 15px 0;
+        }
+
+        .center-text p span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Glowing Button Style */
+        .cta-button {
+            background-color: #800080; /* Purple button */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0px 0px 15px rgba(128, 0, 128, 0.7);
+            transition: 0.3s ease;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0px 0px 30px rgba(128, 0, 128, 1);
+            background-color: #DA70D6; /* Lighter purple on hover */
+        }
+
+        /* Play Music Button */
+        .play-music-button {
+            background-color: #008CBA; /* Blue button */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 140, 186, 0.7);
+            transition: 0.3s ease;
+        }
+
+        .play-music-button:hover {
+            box-shadow: 0px 0px 30px rgba(0, 140, 186, 1);
+            background-color: #00A9D1; /* Lighter blue on hover */
+        }
+
+        /* Hidden paragraph initially */
+        .love-paragraph {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            margin: 30px auto;
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Hide the text and button when paragraph is shown */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video id="video-background" autoplay muted loop>
+        <source src="/112199-693798268_medium (1).mp4" type="video/mp4"> <!-- Replace with your video URL -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Centered Text -->
+    <div class="center-text" id="center-text">
+        <p>Adarsh, you are always in my heart 💖</p>
+        <p>Whenever you feel stressed, remember I'm here with you 🌸</p>
+        <p>Take a deep breath, everything will be okay 🌿</p>
+        <p>I love you more than words can express 💫</p>
+
+        <!-- Glowing Button -->
+        <button class="cta-button" onclick="showLoveParagraph()">babbyyyy do you want more?</button>
+
+        <!-- Play Music Button -->
+        <button class="play-music-button" onclick="playMusic()">play the music and enjoy honey♥</button>
+    </div>
+
+    <!-- Guidance Text below the buttons -->
+    <p style="text-align: center; font-size: 0.9rem; color: white; margin-top: 15px;">
+        Please click on "Play Music" first.
+    </p>
+
+    <!-- Hidden Paragraph that shows when button is clicked -->
+    <div class="love-paragraph" id="love-paragraph">
+        <p>
+            Adarsh, my love, my heart aches to know that today is not going as well as you had hoped, and I can feel your stress and frustration. I want you to know that I am here for you, with every ounce of my love, always. I can see that you’re carrying the weight of the world on your shoulders right now, but please, my love, don’t carry it alone. Let me help you ease that burden, even if just for a moment. Take a deep breath, close your eyes, and imagine me beside you, holding your hand, telling you that everything will be okay. The world can feel overwhelming sometimes, but remember that it’s just a moment in time. This stress, this frustration—it will pass, just like every storm does. Please, don’t let it consume you. You are stronger than you think, but you also don’t have to be strong all the time. It’s okay to let go, to relax, to let the weight fall off your shoulders for a while. You deserve peace, you deserve happiness, and I’ll do everything I can to make sure you feel that today, my love. I wish I could be right there beside you, to hold you close, to remind you just how amazing you are. 💖💫
+        </p>
+        <p>
+            I understand that right now, it might feel like everything is against you, but I want to remind you of something very important: <span>You are not alone.</span> I’m with you, no matter the distance. You are always in my thoughts, and my heart beats just a little bit faster every time I think of you. I may not be able to be with you in person right now, but know that my love for you is here, always by your side, supporting you, cheering you on. You’re going through a rough patch, but just take a moment, breathe in deep, and let the worries slip away for just a little while. Everything will work out, and we’ll come out stronger for it. Whatever you’re facing right now, we will get through it together, as we always do. 💪✨
+        </p>
+        <p>
+            I’m not feeling too great either, because of my PMS, but even when I’m not at my best, I want nothing more than to make you happy, to bring joy back into your day, to remind you that everything will be okay. I wish I could be there to hold you in my arms, to wipe away your stress, and replace it with peace and warmth. Just imagine us together—me gently running my fingers through your hair, looking into your eyes and reminding you how much you mean to me. I would kiss you slowly, softly, and let that kiss melt away all the tension in your body. 💋❤️ I would want nothing more than for you to feel the comfort of my love, to know that I will always be there to make you feel better, to protect your heart, to cherish every single moment with you.
+        </p>
+        <p>
+            The thought of us together brings a smile to my face, and I hold on to that image. I can’t wait to be with you again, my love. Soon, we will be together, and we’ll make all those wild, beautiful, and romantic fantasies we’ve whispered to each other a reality. We’ll recreate those nights of passion and adventure, our secret world where nothing matters except the love we share. I imagine us waking up together in the morning light, your arms around me, the warmth of your touch filling the space between us. Or us sneaking away for a weekend getaway, just the two of us, laughing over something silly, wrapped up in each other’s company as the world fades away. Imagine us dancing under the stars, just you and me, feeling the rhythm of our love, as if we’re the only two people in the universe. 💫🌙
+        </p>
+        <p>
+            Adarsh, my love, you mean more to me than I could ever express. Every time you smile, every time you laugh, my heart skips a beat. You make me feel things I never knew I could feel, and you inspire me to be a better person, just by being you. I know that things feel hard right now, but I need you to know that I’m with you in spirit, and I’ll always be here to lift you up. <span>**Together, we are unstoppable.**</span> No matter how tough life gets, we have each other, and that’s all we need. I can’t wait to hold you close again, to look into your eyes and feel the warmth of your love. Soon, my love, we will be together, and I’ll show you just how deeply I care for you, how much you mean to me. Until that moment, I’m sending you all my love, all my warmth, and all my strength. Keep your head up, my darling, and remember that I’m thinking of you, loving you, and counting down the days until we can turn our dreams into reality. 💖🌹💫 I love you more than words can ever say.
+        </p>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-audio" loop>
+        <source src="/No. 1 Party Anthem (1).mp3" type="audio/mp3"> <!-- Replace with your audio file -->
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        // Function to show the love paragraph when the button is clicked
+        function showLoveParagraph() {
+            document.getElementById("love-paragraph").style.display = "block";
+            document.getElementById("center-text").classList.add("hidden"); // Hide the text
+            document.querySelector(".cta-button").classList.add("hidden"); // Hide the button
+        }
+
+        // Function to play the music when "Play Music" button is clicked
+        function playMusic() {
+            var audio = document.getElementById("background-audio");
+            audio.play(); // Start playing the audio
+        }
+    </script>
+
+</body>
+</html>
